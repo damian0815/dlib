@@ -1,0 +1,17 @@
+#N canvas 0 22 450 300 10;
+#X floatatom 34 130 5 0 0 0 - - -;
+#X floatatom 37 192 5 0 0 0 - - -;
+#X floatatom 163 131 5 0 0 0 - - -;
+#X floatatom 166 193 5 0 0 0 - - -;
+#X obj 28 159 d-map -100 100 0 1;
+#X obj 157 160 d-map 0 100 50 60;
+#X text 19 17 d-map;
+#X text 20 29 -----;
+#X text 22 92 \$1 \$2 define input range \, \$2 \$3 define output range.
+;
+#X text 21 49 Maps input value from input range to output range \,
+without clipping.;
+#X connect 0 0 4 0;
+#X connect 2 0 5 0;
+#X connect 4 0 1 0;
+#X connect 5 0 3 0;

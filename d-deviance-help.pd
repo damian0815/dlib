@@ -1,0 +1,16 @@
+#N canvas 174 159 443 235 10;
+#X text 13 6 d-deviance;
+#X text 14 14 ----------;
+#X floatatom 27 90 5 0 0 0 - - -;
+#X obj 27 122 d-deviance;
+#X text 233 126 part of dlib;
+#X text 22 192 released under the GNU General Public License v3+;
+#X text 111 167 damian@frey.co.nz | www.frey.co.nz;
+#X text 112 153 copyright damian stewart 2006-2008;
+#X floatatom 27 156 5 0 0 0 - - -;
+#X text 12 63 First argument (if any) is passed to internal d-lpf object.
+;
+#X text 13 34 Calculate instantaneous deviance from a running mean
+value.;
+#X connect 2 0 3 0;
+#X connect 3 0 8 0;

@@ -1,0 +1,77 @@
+#N canvas 361 55 411 707 10;
+#X obj 39 442 *~;
+#X msg 115 318 1;
+#X msg 44 318 0;
+#X obj 39 389 osc~ 440;
+#X msg 229 413 bang;
+#X obj 158 212 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 186 212 vsl 15 128 1 100 1 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 214 212 vsl 15 128 1 100 1 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 242 212 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X obj 271 212 vsl 15 128 10 1000 1 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X floatatom 152 350 5 0 0 0 - - -;
+#X floatatom 181 363 5 0 0 0 - - -;
+#X floatatom 209 346 5 0 0 0 - - -;
+#X floatatom 236 363 5 0 0 0 - - -;
+#X floatatom 280 352 5 0 0 0 - - -;
+#X text 144 186 level;
+#X text 186 186 A;
+#X text 216 186 D;
+#X text 243 186 S;
+#X text 272 187 R;
+#X obj 67 229 metro 3000;
+#X obj 67 257 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 67 204 loadbang;
+#X obj 14 282 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 130 436 d-graph~ 0 1 5000;
+#X text 285 595 part of dlib;
+#X text 61 663 released under the GNU General Public License v3+;
+#X text 150 638 damian@frey.co.nz | www.frey.co.nz;
+#X text 180 582 d-adsr3~ adapted from Pd docs;
+#X text 181 624 copyright damian stewart 2010;
+#X text 5 10 d-adsr3~;
+#X text 5 21 --------;
+#X obj 39 503 dac~;
+#X text 4 42 Provides a linear-output ADSR envelope.;
+#X text 4 68 Arguments are level \, A \, D \, S \, R \, enable-control-rate-output.
+level is arbitrary (or 0..1) \, A D and R are in ms \, and S is the
+same units as level. If enable-control-rate-output is 1 \, then the
+right outlet sends out control-rate envelope to match.;
+#X text 4 147 Pass through [d-lin-to-log~] for log output \, or [*~]
+for squared output.;
+#X floatatom 283 444 5 0 0 0 - - -;
+#X obj 14 256 del 50;
+#X obj 130 389 d-adsr3~ 1 5 20 0.8 50 1;
+#X connect 0 0 32 0;
+#X connect 0 0 32 1;
+#X connect 1 0 4 0;
+#X connect 1 0 38 0;
+#X connect 2 0 38 0;
+#X connect 3 0 0 0;
+#X connect 4 0 24 1;
+#X connect 5 0 10 0;
+#X connect 5 0 38 1;
+#X connect 6 0 11 0;
+#X connect 6 0 38 2;
+#X connect 7 0 12 0;
+#X connect 7 0 38 3;
+#X connect 8 0 13 0;
+#X connect 8 0 38 4;
+#X connect 9 0 14 0;
+#X connect 9 0 38 5;
+#X connect 20 0 21 0;
+#X connect 20 0 37 0;
+#X connect 21 0 1 0;
+#X connect 22 0 20 0;
+#X connect 23 0 2 0;
+#X connect 37 0 23 0;
+#X connect 38 0 0 1;
+#X connect 38 0 24 0;
+#X connect 38 2 36 0;
