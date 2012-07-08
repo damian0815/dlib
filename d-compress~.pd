@@ -1,4 +1,4 @@
-#N canvas 420 153 665 552 10;
+#N canvas 26 103 509 542 10;
 #X obj 105 -41 inlet~;
 #X obj 109 471 outlet~;
 #X obj 109 419 *~;
@@ -49,6 +49,7 @@
 #X text 460 219 for general betterness;
 #X text 547 82 make-up gain;
 #X obj 107 446 *~ -1;
+#X floatatom 260 147 5 0 0 0 - - -;
 #X connect 0 0 15 0;
 #X connect 0 0 35 0;
 #X connect 2 0 41 0;
@@ -58,6 +59,7 @@
 #X connect 7 0 3 1;
 #X connect 7 0 33 0;
 #X connect 8 0 9 0;
+#X connect 8 0 42 0;
 #X connect 9 0 36 0;
 #X connect 10 0 8 0;
 #X connect 11 0 14 0;
