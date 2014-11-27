@@ -1,0 +1,20 @@
+#N canvas 66 394 450 300 10;
+#X obj 26 11 inlet~;
+#X obj 101 121 vsl 15 64 -1 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 1967 1;
+#X obj 98 71 snapshot~;
+#X obj 97 30 bang~;
+#X obj 174 97 d-map -1 1 -1 1;
+#X floatatom 170 151 5 0 0 0 - - -;
+#X floatatom 224 142 5 0 0 0 - - -;
+#X obj 200 39 d-default \$1 -1;
+#X obj 317 39 d-default \$2 1;
+#X connect 0 0 2 0;
+#X connect 2 0 4 0;
+#X connect 2 0 5 0;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;
+#X connect 4 0 6 0;
+#X connect 7 0 4 1;
+#X connect 8 0 4 2;
+#X coords 0 -1 1 1 20 90 1 100 100;

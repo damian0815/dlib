@@ -1,0 +1,25 @@
+#N canvas 575 263 450 300 10;
+#X obj 57 179 d-jitter 0.05;
+#X text 155 180 5% jitter;
+#X msg 50 149 1;
+#X floatatom 58 211 5 0 0 0 - - -;
+#X msg 90 148 100;
+#X text 41 10 d-jitter;
+#X text 41 28 --------;
+#X text 41 52 add 'jitter' to an incoming value by randomising it with
+a;
+#X text 41 66 percentage range.;
+#X msg 143 122 0.1;
+#X text 181 122 10% jitter;
+#X msg 160 140 0.5;
+#X text 200 139 50% jitter;
+#X text 40 98 right inlet or \$1 sets jitter percentage.;
+#X text 317 192 part of dlib;
+#X text 106 258 released under the GNU General Public License v3+;
+#X text 195 233 damian@frey.co.nz | www.frey.co.nz;
+#X text 195 219 copyright damian stewart 2006-2008;
+#X connect 0 0 3 0;
+#X connect 2 0 0 0;
+#X connect 4 0 0 0;
+#X connect 9 0 0 1;
+#X connect 11 0 0 1;

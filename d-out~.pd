@@ -4,7 +4,7 @@
 #X obj 114 163 *~;
 #X obj 284 166 *~;
 #X obj 87 15 vsl 15 78 -6 3 0 1 empty empty empty 0 -8 0 8 -228992
--1 -1 5133 1;
+-1 -1 3633 1;
 #X obj 289 441 dac~;
 #X obj 23 390 writesf~ 2;
 #X msg 115 248 stop;
